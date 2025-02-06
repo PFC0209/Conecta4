@@ -25,5 +25,26 @@ public class Conecta4{
         char juagorActual = jugador1;
         boolean jocFinalitzat = false;
 
+        while(!jocFinalitzat){
+            Tablero.imprimirTablero();
+            int columna = Columna.demanaColumna(sc, juagorActual);
+            Fitxa.Colocarfitxa(columna, juagorActual);
+
+            if (Win.HihaGuanyador(juagorActual)){
+                Tablero.imprimirTablero();
+                System.out.println("Jugador " +juagorActual + " ha guanyat!");
+                jocFinalitzat = true;
+            } else if (Empate.esEmpate()) {
+                Tablero.imprimirTablero();
+                System.out.println("És un Empate!");
+            }else{
+                juagorActual = (juagorActual == jugador1) ? jugador2 : jugador1;
+            }
+        }
+        sc.close();
+    }
+    public static void main(String [] args){
+        Conecta4 conecta4 = new Conecta4();
+        conecta4.jugar();
     }
 }

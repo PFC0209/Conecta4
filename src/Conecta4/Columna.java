@@ -5,11 +5,11 @@ import java.util.Scanner;
 import static Conecta4.Conecta4.*;
 
 public class Columna {
-    public int demanaColumna(Scanner scanner, char jugador){
+    public static int demanaColumna(Scanner scanner, char jugador){
         int columna;
 
         do{
-            System.out.print("Jugador: " + jugador +",tria una columna (1-7): ");
+            System.out.print("Jugador: " + jugador +", tria una columna (0-6): ");
             while (!scanner.hasNextInt()){
                 System.out.println("Per favor escriu un numero.");
                 scanner.next();
