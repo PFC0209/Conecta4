@@ -19,4 +19,10 @@ public class Conecta4{
             }
         }
     }
+
+    public void jugar(){
+        Scanner sc = new Scanner(System.in);
+        char juagorActual = jugador1;
+        boolean jocFinalitzat = false;
+    }
 }
