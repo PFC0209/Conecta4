@@ -24,5 +24,6 @@ public class Conecta4{
         Scanner sc = new Scanner(System.in);
         char juagorActual = jugador1;
         boolean jocFinalitzat = false;
+
     }
 }
