@@ -43,8 +43,8 @@ public class Conecta4{
         }
         sc.close();
     }
-    public static void main(String [] args){
+    /*public static void main(String [] args){
         Conecta4 conecta4 = new Conecta4();
         conecta4.jugar();
-    }
+    }*/
 }
