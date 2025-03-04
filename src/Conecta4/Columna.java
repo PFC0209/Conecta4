@@ -18,4 +18,7 @@ public class Columna {
         }while (columna < 0 || columna >= columnes || tablero[0][columna] != buit);
         return columna;
     }
+
+
+
 }
